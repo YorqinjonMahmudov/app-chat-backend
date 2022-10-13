@@ -1,0 +1,27 @@
+GET http://localhost:800/user/register
+username: otabek
+
+###
+GET http://localhost:800/user/search/y
+#Content-Type: application/json
+
+
+###
+GET http://localhost:800/chat/get-chats
+username: yusufbek
+
+###
+GET http://localhost:800/message/get-messages
+username: yusufbek
+
+###
+POST http://localhost:800/message/send-message
+Content-Type: application/json
+username: yorqinjon
+
+{
+  "text": "how are you  otabek",
+  "chatId": null,
+  "toUser": "yorqinjon"
+}
+
